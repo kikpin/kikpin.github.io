@@ -10,3 +10,13 @@ gems:
   - jekyll-paginate
 markdown: kramdown
 baseurl: ''
+
+# comments 评论功能
+comments:
+  gitalk: true
+  gitalk_clientID: '6a87821d43a5c898715e'
+  gitalk_Secret: 'be577df309ba61a7d0f3ee9d0379300a3f3079c7'
+  gitalk_repo: 'kikpin.github.io'
+  gitalk_owner: 'kikpin'
+  gitalk_admin: 'kikpin'
+  distractionFreeMode: true
