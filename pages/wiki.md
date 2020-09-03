@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Wiki
+title: Notes
 description: 梳理官方文档小笔记
-keywords: 维基, Wiki
+keywords: 维基, Wiki, Notes
 comments: false
-menu: 维基
+menu: Notes
 permalink: /wiki/
 ---
 
-> 求求你，学不动了
+> 😂 求求你，学不动了
 
 <ul class="listing">
 {% for wiki in site.wiki %}
