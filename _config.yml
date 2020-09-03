@@ -25,8 +25,8 @@ components:
         enabled: false
     # 不蒜子访问统计
     busuanzi:
-        enabled: false
-        start_date: 2020-04-01
+        enabled: true
+        start_date: 2020-09-01
 # 压缩页面内容
 compress_html:
   clippings: all

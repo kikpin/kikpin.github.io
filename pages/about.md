@@ -4,13 +4,13 @@ title: About
 description: kikpin
 keywords: kikpin
 comments: true
-menu: 关于
+menu: About
 permalink: /about/
 ---
 
 Hi, men !
 
-## 联系
+## Contact Me
 
 <ul>
 {% for website in site.data.social %}
@@ -19,7 +19,7 @@ Hi, men !
 </ul>
 
 
-## Skill Keywords
+## Skill
 
 {% for skill in site.data.skills %}
 ### {{ skill.name }}
