@@ -12,3 +12,5 @@ topmost: false
 
 > `layout: wiki` 笔记
 > `layout: mindmap` 思维导图
+
+> `topmost: false` 置顶
