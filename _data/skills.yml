@@ -1,19 +1,18 @@
-- name: Software Engineer Keywords
+- name: Web Developer
   keywords:
-      - Java
-      - C++
-      - Python
-      - Design Patterns
+      - HTML
+      - CSS
+      - JavaScript
+      - TypeScript
+      - JQuery
+      - VUE
 
-- name: Mobile Developer Keywords
+- name: Mobile Developer
   keywords:
+      - Flutter
+      - uni-app
       - Android
-      - Reverse Engineering
+      - iOS
+      - H5 APP
+      - 小程序
 
-- name: Windows Developer Keywords
-  keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
