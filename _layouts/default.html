@@ -1,48 +1,12 @@
-<!DOCTYPE html>
-<html>
+---
+layout: compress
+---
 
-{% include head.html %}
-
-<body>
-
-  {% include header.html %}
-
-  <div class="page-content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </div>
-
-  {% include footer.html %}
-
-  <script>
-    $(window).scroll(function () {
-      if ($('body').scrollTop() !== 0) {
-        $('header').addClass('sticky');
-      } else {
-        $('header').removeClass('sticky');
-      }
-    });
-  </script>
-</body>
-
-<!-- gitalk -->
-
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
-{% if site.comments.gitalk %}
-<script>
-  var gitalk = new Gitalk({
-    clientID: '{{ site.comments.gitalk_clientID }}',
-    clientSecret: '{{ site.comments.gitalk_Secret }}',
-    repo: '{{ site.comments.gitalk_repo }}',
-    owner: '{{ site.comments.gitalk_owner }}',
-    admin: '{{ site.comments.gitalk_admin }}',
-    id: location.pathname,
-    distractionFreeMode: '{{ site.comments.distractionFreeMode }}'
-  })
-  gitalk.render('disqus_thread')
-</script>
+{% assign assets_base_url = site.url %}
+{% if site.cdn.jsdelivr.enabled %}
+{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
 {% endif %}
-
-</html>
+{% assign assets_images_url = 'src="' | append: assets_base_url | append: "/images" %}
+{% include header.html %}
+    {{ content | replace: 'src="/images', assets_images_url }}
+{% include footer.html %}
