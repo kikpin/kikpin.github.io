@@ -12,6 +12,8 @@ timezone: Asia/Beijing
 encoding: "utf-8"
 side_bar_repo_limit: 5
 repository: kikpin/kikpin.github.io
+# copyright year
+copyright_year: '2020' 
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
@@ -51,31 +53,31 @@ email: kikpin@foxmail.com
 navs:
   -
     href: /
-    label: 首页
+    label: HOME
 
   -
     href: /categories/
-    label: 分类
+    label: CATEGORIES
 
   -
     href: /archives/
-    label: 归档
+    label: ARCHIVES
 
 #   -
 #     href: /open-source/
-#     label: 开源
+#     label: OPEN SOURCE
 
   -
     href: /wiki/
-    label: 文档摘抄
+    label: NOTES
 
 #   -
 #     href: /links/
-#     label: 链接
+#     label: FRIEND LINKS
 
   -
     href: /about/
-    label: 关于
+    label: ABOUT
 
 # ---------------- #
 #       RSS        #
